@@ -1,0 +1,59 @@
+CLS
+SOUND 100, 1
+SOUND 200, 2
+SOUND 300, 3
+SOUND 400, 4
+SOUND 500, 5
+PRINT "***JOB DEPARTMENT***"
+SOUND 112, 3
+SOUND 581, 3
+SOUND 121, 8
+COLOR 22
+PRINT "Type an option from below:-"
+COLOR 5
+PRINT "<yearly sales>"
+COLOR 4
+PRINT "also contains : annual rates, monthly income"
+COLOR 5
+PRINT "<job selection>"
+COLOR 4
+PRINT "also contains : new jobs, log in"
+INPUT "type your desired content, please:-"; input1$
+IF input1$ = "yearly sales" THEN CLS
+SCREEN 13
+SOUND 450, 5
+SOUND 540, 6
+PRINT "((( YEARLY SALES )))"
+PRINT ""
+PRINT
+INPUT "Enter your name="; name$
+INPUT "enter your ID number="; idnum$
+CLS
+PRINT "((( YEARLY SALES )))"
+PRINT
+PRINT
+PRINT "Hello ", name$, "Nice to meet you! :)"
+SOUND 111, 1
+SOUND 111, 2
+SOUND 222, 1
+SOUND 223, 2
+IF input1$ = "job selection" THEN CLS
+SOUND 321, 5
+SOUND 123, 5
+SCREEN 13
+PRINT "((( Job Selections )))"
+INPUT "Enter password"; password$
+IF password$ = "****" THEN PRINT "Welcome!"
+IF password$ = "8818" THEN PRINT "Sorry, your account isn't valid anymore!"
+IF password$ <> "****" THEN END
+
+
+
+
+
+
+
+
+
+
+
